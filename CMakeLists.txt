@@ -14,6 +14,8 @@ include_directories(${SOURCE_DIR})
 include_directories(pybind11)
 add_subdirectory(pybind11)
 
+# 添加opencv路径
+include_directories(/usr/local/include/opencv4)
 include_directories(src/include)
 
 add_library(seeta_face_detector SHARED IMPORTED)
